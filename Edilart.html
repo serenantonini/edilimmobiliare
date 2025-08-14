@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edilart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">EDILIMMOBILIARE</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="Edilimmobiliare.html">Edilimmobiliare</a></li>
+        <li><a href="StudioArchitettonico.html">Studio Architettonico</a></li>
+        <li><a href="Edilart.html" class="active">Edilart</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar-links">
+        <li><a href="StudioArchitettonico.html">Studio Architettonico</a></li>
+        <li><a href="Edilimmobiliare.html">Edilimmobiliare</a></li>
+        <li><a href="Edilart.html">Edilart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header">
+      <video autoplay loop muted playsinline id="video-background">
+        <source src="header.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>
+      <div class="content">
+        <h1 style="text-transform: uppercase; color: white;" class="title">EDILART</h1>
+      </div>
+    </div>
+  </header>
+
+<!-- CHI SIAMO -->
+<section id="chi-siamo" class="about">
+  <div class="about-text">
+    <h2 class="title">Chi Siamo</h2>
+    <p>
+      Edilart è un’impresa di costruzioni strutturata e affidabile, che offre soluzioni chiavi in mano per ogni esigenza edilizia. Seguiamo direttamente tutte le fasi del lavoro, grazie a un team interno composto da fabbro, elettricista, idraulico e serramentista.
+    </p>
+    <p>
+      Siamo specializzati in costruzioni civili, industriali, ristrutturazioni e coibentazioni, con particolare attenzione alle finiture e ai materiali di qualità. Garantiamo flessibilità, rapidità e prezzi competitivi.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="https://plus.unsplash.com/premium_photo-1682436305371-bb51c2ece9c7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Edilart cantiere e finiture">
+  </div>
+</section>
+
+
+  <!-- QUI ANDRÀ LA SEZIONE "LE NOSTRE FINITURE" CON LA GALLERIA DI IMMAGINI -->
+<section id="finiture">
+  <h2 class="title">Le Nostre Finiture</h2>
+  <div class="cards">
+    <div class="card" onclick="apriPopup('popup1')">
+      <img src="images/finiture/pavimenti.jpg" alt="Pavimenti e Rivestimenti">
+      <div class="card-content">
+        <h3>Pavimenti e Rivestimenti</h3>
+        <p>Materiali di alta qualità per ambienti accoglienti e durevoli.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="apriPopup('popup2')">
+      <img src="images/finiture/finestra.jpg" alt="Infissi e Serramenti">
+      <div class="card-content">
+        <h3>Infissi e Serramenti</h3>
+        <p>Sicurezza, isolamento e stile con finiture curate nei minimi dettagli.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="apriPopup('popup3')">
+      <img src="images/finiture/bagni.jpg" alt="Sanitari e Bagni">
+      <div class="card-content">
+        <h3>Sanitari e Bagni</h3>
+        <p>Soluzioni funzionali ed eleganti per ogni esigenza estetica.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="apriPopup('popup4')">
+      <img src="images/finiture/soffitti.jpg" alt="Soffitti e Controsoffitti">
+      <div class="card-content">
+        <h3>Soffitti e Controsoffitti</h3>
+        <p>Personalizzazioni estetiche e tecniche per ogni spazio.</p>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<!-- POPUP GALLERIA -->
+<div id="popup1" class="popup"> 
+  <span class="close" onclick="chiudiPopup('popup1')">&times;</span>
+  <div class="popup-gallery-grid">
+    <!-- Serie p020_1 -->
+    <img src="images/finiture/pavimenti/p020_1_1.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p020_1_2.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p020_1_4.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p020_1_5.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p020_1_6.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p020_1_7.jpg" alt="" onclick="apriImmagine(this)">
+
+    <!-- Serie p021_0 -->
+    <img src="images/finiture/pavimenti/p021_0_1.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_2.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_3.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_4.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_5.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_6.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/pavimenti/p021_0_7.jpg" alt="" onclick="apriImmagine(this)">
+  </div>
+</div>
+
+
+<div id="popup2" class="popup"> 
+  <span class="close" onclick="chiudiPopup('popup2')">&times;</span>
+  <div class="popup-gallery-grid">
+    <img src="images/finiture/infissi/p026_1_1.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_2.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_3.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_4.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_5.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_6.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_7.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_8.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_9.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_10.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_11.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_12.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_13.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/infissi/p026_1_14.jpg" alt="" onclick="apriImmagine(this)">
+  </div>
+</div>
+
+
+<div id="popup3" class="popup">
+  <span class="close" onclick="chiudiPopup('popup3')">&times;</span>
+  <div class="popup-gallery-grid">
+    <img src="images/finiture/bagni/p013_1_1.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_2.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_3.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_4.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_5.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_6.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/bagni/p013_1_7.jpg" alt="" onclick="apriImmagine(this)">
+  </div>
+</div>
+
+
+
+<div id="popup4" class="popup">
+  <span class="close" onclick="chiudiPopup('popup4')">&times;</span>
+  <div class="popup-gallery-grid">
+    <img src="images/finiture/soffitti/p017_1_1.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_4.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_6.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_8.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_9.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_10.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p017_1_11.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_24.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_25.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_26.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_28.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_29.jpg" alt="" onclick="apriImmagine(this)">
+    <img src="images/finiture/soffitti/p045_0_30.jpg" alt="" onclick="apriImmagine(this)">
+  </div>
+</div>
+
+
+
+<!-- MODALE PER IMMAGINE INGRANDITA -->
+<div id="zoom-img" class="zoom-popup">
+  <span class="close" onclick="chiudiZoom()">&times;</span>
+  <img id="zoomedImage" src="" alt="Zoomed">
+</div>
+
+  
+  <!-- DIVISORE -->
+  <section class="divider-hero" style="background-image: url(images/edilart-hero.png);">
+    <div class="overlay">
+      <h2>"La bellezza nasce dal particolare"</h2>
+    </div>
+  </section>
+
+  <!-- QUI ANDRÀ LA SEZIONE "LE NOSTRE REALIZZAZIONI" CON PROGETTI E FOTO -->
+
+  <!-- CONTATTI -->
+   
+  <section id="contatti" class="contatti-section">
+    <h2 class="title">Contattaci</h2>
+  
+    <p class="contatti-subtitle">Siamo pronti ad ascoltare le tue idee e trasformarle in realtà.</p>
+  
+    <div class="contatti-grid">
+      <div class="contatti-item" onclick="apriMappa()">
+        <span class="contatti-icon">📍</span>
+        <h3>Indirizzo</h3>
+        <p>Piazza Indipendenza, 14 <br>Saronno (VA)</p>
+      </div>
+      
+      <div class="contatti-item">
+        <span class="contatti-icon">📞</span>
+        <h3>Telefono</h3>
+        <p><a href="tel:+393331234567">02 9602554</a>
+          <br>
+          <a href="tel:+393332069735">3332069735</a>
+          <br>
+          <a href="tel:+393397189934">3397189934</a></p>
+      </div>
+      <div class="contatti-item" style="padding: 0">
+        <span class="contatti-icon" style="margin-top:30px">📧</span>
+        <h3>Email</h3>
+        <p style="margin-bottom: 40px;">
+          <a href="mailto:info@studioimmobiliaresaronno.it">info@borroniedilimmobiliare.it</a>
+          <a href="mailto:studio.archborroni@gmail.com">studio.archborroni@gmail.com</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+  
+  
+  <div id="mappa-popup" class="mappa-popup">
+    <div class="mappa-content">
+      <span class="chiudi" onclick="chiudiMappa()">&times;</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.1941636259967!2d9.033537185059277!3d45.6268356480105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786915ed17c9a95%3A0xfc370a8364ffbf61!2sSoc.%20Edilimmobil.%20Di%20Borroni%20Pietro%20E%20C.%20S.A.S.!5e0!3m2!1sit!2sit!4v1745249264297!5m2!1sit!2sit" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  
+  
+  
+
+
+  <footer>
+    <p>&copy; 2025 Studio Immobiliare & Architettura - Saronno. Tutti i diritti riservati.</p>
+  </footer>
+
+<script type="module" src="script.js"></script>
+
+
+  <script>
+    function apriMappa() {
+      document.getElementById("mappa-popup").style.display = "flex";
+    }
+    function chiudiMappa() {
+      document.getElementById("mappa-popup").style.display = "none";
+    }
+  </script>
+
+
+
+<script>
+  function apriPopup(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function chiudiPopup(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+
+<script>
+  let galleryImages = [];      // array delle immagini
+  let currentImageIndex = -1;  // indice dell'immagine corrente
+
+  // Apre la modale e imposta immagine + array
+  function apriImmagine(imgElement) {
+const currentPopup = imgElement.closest('.popup');
+galleryImages = Array.from(currentPopup.querySelectorAll('img'));
+    currentImageIndex = galleryImages.indexOf(imgElement);
+
+    const zoomPopup = document.getElementById('zoom-img');
+    const zoomedImage = document.getElementById('zoomedImage');
+    zoomedImage.src = imgElement.src;
+    zoomPopup.style.display = 'flex';
+  }
+
+  // Chiude la modale
+  function chiudiZoom() {
+    document.getElementById('zoom-img').style.display = 'none';
+    currentImageIndex = -1;
+  }
+
+  // Chiude cliccando fuori dall'immagine
+  document.getElementById('zoom-img').addEventListener('click', function (event) {
+    const zoomedImage = document.getElementById('zoomedImage');
+    if (event.target !== zoomedImage) {
+      chiudiZoom();
+    }
+  });
+
+  // Navigazione con frecce sinistra/destra
+  document.addEventListener('keydown', function (event) {
+    const zoomPopup = document.getElementById('zoom-img');
+    if (zoomPopup.style.display !== 'flex' || currentImageIndex === -1) return;
+
+    if (event.key === 'ArrowRight') {
+      currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    } else if (event.key === 'ArrowLeft') {
+      currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    } else {
+      return;
+    }
+
+    const newSrc = galleryImages[currentImageIndex].src;
+    document.getElementById('zoomedImage').src = newSrc;
+  });
+</script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const popups = document.querySelectorAll(".popup");
+    popups.forEach(p => p.style.display = "none");
+  });
+</script>
+
+  <script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="admin-container">
+
+    <!-- Lista annunci pubblicati -->
+<section class="lista-annunci">
+  <h2>Annunci Pubblicati</h2>
+
+
+<div id="elenco-annunci" class="annunci-grid">
+  <!-- Qui verranno caricate le card -->
+  <div class="card aggiungi-card" id="aggiungi-btn">
+    <div class="card-content">
+      <div class="plus-icon">+</div>
+      <p>Aggiungi Annuncio</p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Form nascosto all'inizio -->
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <form id="annuncio-form">
+      <h2 id="form-title">Nuovo Annuncio</h2>
+
+      <label for="titolo">Titolo</label>
+      <input type="text" id="titolo" name="titolo" required>
+
+      <label for="prezzo">Prezzo</label>
+      <input type="text" id="prezzo" name="prezzo" required>
+
+      <label for="zona">Zona</label>
+      <input type="text" id="zona" name="zona" required>
+
+      <label for="descrizione">Descrizione</label>
+      <textarea id="descrizione" name="descrizione" required></textarea>
+
+      <label>Immagine (link o upload):</label>
+      <input type="url" name="immagine" placeholder="https://..." />
+      <p>oppure</p>
+      <input type="file" id="fileImg" name="fileImg" accept="image/*" />
+
+      <button type="submit">Salva Annuncio</button>
+    </form>
+  </div>
+</div>
+
+</section>
+
+  </div>
+    <script type="module" src="app.js" defer></script>
+
+</body>
+
+</html>

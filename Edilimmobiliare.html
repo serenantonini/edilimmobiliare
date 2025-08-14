@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edilimmobiliare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">EDILIMMOBILIARE</a>
+      </div>
+  
+      <ul class="navbar-links">
+        <li><a href="Edilimmobiliare.html" class="active">Edilimmobiliare</a></li>
+        <li><a href="StudioArchitettonico.html">Studio Architettonico</a></li>
+        <li><a href="Edilart.html">Edilart</a></li>
+      </ul>
+  
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    </div>
+  
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-links">
+        <li><a href="StudioArchitettonico.html">Studio Architettonico</a></li>
+        <li><a href="Edilimmobiliare.html">Edilimmobiliare</a></li>
+        <li><a href="Edilart.html">Edilart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="header">
+        <video autoplay loop muted playsinline id="video-background">
+            <source src="header.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+        <div class="content">
+            <h1 style="text-transform: uppercase; color: white;" class="title">EDILIMMOBILIARE</h1>
+            <!-- <p>sottotitolo</p> -->
+        </div>
+    </div>
+  </header>
+
+
+
+
+  
+
+
+<section id="chi-siamo" class="about">
+  <div class="about-text">
+    <h2 class="title">Chi Siamo</h2>
+    <p>
+      Da oltre trent’anni, Edilimmobiliare affianca i propri clienti con serietà e competenza in tutte le fasi della compravendita e locazione di immobili residenziali, commerciali e industriali.
+      Offriamo consulenze personalizzate, valutazioni professionali, gestione affitti e supporto tecnico qualificato grazie alla collaborazione con lo studio dell’arch. Pierpaolo Borroni, garantendo sempre trasparenza e attenzione alle esigenze di ciascun cliente.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="https://plus.unsplash.com/premium_photo-1682436305371-bb51c2ece9c7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Studio e architettura">
+  </div>
+</section>
+
+
+
+
+
+  <section class="divider-hero" style="background-image: url(images/chiavi.png);">
+    <div class="overlay">
+      <h2>“Spazi pensati per vivere”</h2>
+    </div>
+  </section>
+  
+  
+  
+<div class="edilimmobiliare-servizi">
+  <section id="servizi">
+    <h2 class="title">I Nostri Servizi</h2>
+    <div class="servizi-grid">
+      <div class="servizio-card">
+        <h3>Compravendita</h3>
+        <p>Assistenza completa nella vendita e nell'acquisto di immobili residenziali, commerciali e industriali.</p>
+      </div>
+      <div class="servizio-card">
+        <h3>Locazioni e Affitti</h3>
+        <p>Gestione affitti e consulenza per contratti di locazione, con selezione affidabile degli inquilini.</p>
+      </div>
+      <div class="servizio-card">
+        <h3>Valutazioni e Mutui</h3>
+        <p>Valutazioni professionali e supporto nella scelta del mutuo più adatto alle tue esigenze.</p>
+      </div>
+      <div class="servizio-card">
+        <h3>Supporto Tecnico</h3>
+        <p>Pratiche catastali, certificazioni energetiche e consulenze progettuali in collaborazione con lo studio tecnico.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+<section id="proposte" class="proposte-section">
+  <h2 class="title">Proposte Immobiliari</h2>
+  <div class="cards" id="proposte-container">
+    <!-- Le card verranno inserite via JS -->
+  </div>
+
+  <div style="text-align: center; margin-top: 3em;">
+    <a href="https://www.immobiliare.it/agenzie-immobiliari/99758/edilimmobiliare-saronno/" target="_blank" class="btn-proposte">Vedi tutte le proposte su Immobiliare.it</a>
+  </div>
+</section>
+
+
+
+<!-- Sezione richiesta immobiliari -->
+<section id="richieste-immobiliari" class="richiesta-section styled-section">
+  <div class="richiesta-container">
+    <h2 class="title">Richieste Immobiliari</h2>
+    <p class="richiesta-intro">
+      Sei alla ricerca di un immobile con caratteristiche specifiche? Compila il modulo e ti aiuteremo a trovare la soluzione più adatta alle tue esigenze.
+    </p>
+    <div class="contact-button-wrapper">
+<button onclick="apriModulo()" class="btn-proposte">Compila il Modulo</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Popup Modulo -->
+<div class="mappa-popup" id="popupRichiesta">
+  <div class="richiesta-content">
+    <span class="chiudi" onclick="chiudiModulo()">&times;</span>
+    <h2 style="margin-bottom: 1em">Modulo richiesta immobile</h2>
+
+    <form class="richiesta-form" action="https://formsubmit.co/serenantonini@gmail.com" method="POST">
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="cognome">Cognome *</label>
+      <input type="text" id="cognome" name="cognome" required>
+
+      <label for="contatto">Telefono o Email *</label>
+      <input type="text" id="contatto" name="contatto" required>
+
+      <label for="destinazione">Destinazione d'uso *</label>
+      <select id="destinazione" name="destinazione" required>
+        <option value="">-- Seleziona --</option>
+        <option value="residenziale">Residenziale</option>
+        <option value="industriale">Industriale</option>
+        <option value="commerciale">Commerciale</option>
+      </select>
+
+      <label for="stato">Stato immobile *</label>
+      <select id="stato" name="stato" required>
+        <option value="">-- Seleziona --</option>
+        <option value="nuovo">Nuovo</option>
+        <option value="usato">Usato</option>
+      </select>
+
+      <label for="tipologia">Tipologia *</label>
+      <select id="tipologia" name="tipologia" required>
+        <option value="">-- Seleziona --</option>
+        <option value="appartamento">Appartamento</option>
+        <option value="villa">Villa</option>
+        <option value="terreno">Terreno</option>
+        <option value="capannone">Capannone</option>
+        <option value="negozio">Negozio</option>
+      </select>
+
+      <label for="locali">Numero locali *</label>
+      <select id="locali" name="locali" required>
+        <option value="">-- Seleziona --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select>
+
+      <label for="ubicazione">Ubicazione *</label>
+      <select id="ubicazione" name="ubicazione" required>
+        <option value="">-- Seleziona --</option>
+        <option value="saronno">Saronno</option>
+        <option value="caronno pertusella">Caronno Pertusella</option>
+        <option value="uboldo">Uboldo</option>
+        <option value="gerenzano">Gerenzano</option>
+        <option value="origgio">Origgio</option>
+        <option value="turate">Turate</option>
+      </select>
+
+      <label for="altro-comune">Specificare altro comune non in elenco</label>
+      <input type="text" id="altro-comune" name="altro-comune" placeholder="Inserisci il nome del comune">
+
+      <button type="submit">Invia richiesta</button>
+</form>
+
+  </div>
+</div>
+
+
+  <section id="contatti" class="contatti-section">
+    <h2 class="title">Contattaci</h2>
+  
+    <p class="contatti-subtitle">Siamo pronti ad ascoltare le tue idee e trasformarle in realtà.</p>
+  
+    <div class="contatti-grid">
+      <div class="contatti-item" onclick="apriMappa()">
+        <span class="contatti-icon">📍</span>
+        <h3>Indirizzo</h3>
+        <p>Piazza Indipendenza, 14 <br>Saronno (VA)</p>
+      </div>
+      
+      <div class="contatti-item">
+        <span class="contatti-icon">📞</span>
+        <h3>Telefono</h3>
+        <p><a href="tel:+393331234567">02 9602554</a>
+          <br>
+          <a href="tel:+393332069735">3332069735</a>
+          <br>
+          <a href="tel:+393397189934">3397189934</a></p>
+      </div>
+      <div class="contatti-item" style="padding: 0">
+        <span class="contatti-icon" style="margin-top:30px">📧</span>
+        <h3>Email</h3>
+        <p style="margin-bottom: 40px;">
+          <a href="mailto:info@studioimmobiliaresaronno.it">info@borroniedilimmobiliare.it</a>
+          <a href="mailto:studio.archborroni@gmail.com">studio.archborroni@gmail.com</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+  
+  
+  <div id="mappa-popup" class="mappa-popup">
+    <div class="mappa-content">
+      <span class="chiudi" onclick="chiudiMappa()">&times;</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.1941636259967!2d9.033537185059277!3d45.6268356480105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786915ed17c9a95%3A0xfc370a8364ffbf61!2sSoc.%20Edilimmobil.%20Di%20Borroni%20Pietro%20E%20C.%20S.A.S.!5e0!3m2!1sit!2sit!4v1745249264297!5m2!1sit!2sit" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <footer>
+    <p>&copy; 2025 Studio Immobiliare & Architettura - Saronno. Tutti i diritti riservati.</p>
+  </footer>
+
+
+
+<script type="module" src="script.js"></script>
+
+
+  <script>
+    function apriMappa() {
+      document.getElementById("mappa-popup").style.display = "flex";
+    }
+  
+    function chiudiMappa() {
+      document.getElementById("mappa-popup").style.display = "none";
+    }
+  </script>
+
+  <script>
+  function apriModulo() {
+    document.getElementById("popupRichiesta").style.display = "flex";
+  }
+
+  function chiudiModulo() {
+    document.getElementById("popupRichiesta").style.display = "none";
+  }
+</script>
+  
+
+</body>
+</html>
